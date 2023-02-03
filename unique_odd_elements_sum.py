@@ -1,5 +1,8 @@
-n=int(input())
+n=input()
 a=list(map(int,input().split()))
-b=set(list(a))
-y=[c for c in b if c%2==1]
-print(sum(y))
+b=[]
+for i in a:
+    if i%2!=0:
+        b.append(i)
+d=set(list(b))
+print(sum(d))
